@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: umbdemofrontend 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: umbdemofrontend
+  template:
+    metadata:
+      labels:
+        app: umbdemofrontend 
+    spec:
+      containers:
+        - name: umbdemofrontend 
+          image: chaeschpi.azurecr.io/umbdemofrontend
+          ports:
+          - containerPort: 80
