@@ -6,6 +6,6 @@ spec:
     type: LoadBalancer
     ports:
     - port: 80 
-    - targetport: 5000
+    - targetPort: 5000
     selector:
         app: umbdemofrontend
