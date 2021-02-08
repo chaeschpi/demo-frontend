@@ -16,4 +16,8 @@ spec:
         - name: umbdemofrontend 
           image: chaeschpi.azurecr.io/umbdemofrontend
           ports:
-          - containerPort: 80
+          - containerPort: 5000
+          env:
+          - name: SVC
+            value: "serviceapi"
+    
