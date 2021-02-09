@@ -10,5 +10,5 @@ spec:
       paths:
       - path: /
         backend:
-          serviceName: umbdemofrontend
+          serviceName: frontendservice
           servicePort: 80
