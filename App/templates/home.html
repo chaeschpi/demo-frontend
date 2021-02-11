@@ -7,23 +7,26 @@
     <title>UMB Demo App</title>
 </head>
 <body>
-    <img style="padding: 30px; width: 80%; align-content: center;" src="{{url_for('static', filename='umb.svg')}}">
-    <div class="mx-auto" style="width: 200px;padding-top: 50px;">
+    <img style="padding: 30px; width: 300px; align-content: center;" src="{{url_for('static', filename='umb.svg')}}">
+    <a class="btn btn-primary" href="/env" role="button">ENV-Vars</a>
+    <div class="mx-auto" style="width: 300px;padding-top: 20px;">
         
-        <div  class="card" style="width: 18rem;" >
+        <div  class="card" style="width: 100%;" >
             <h1 style="text-align: center;">App API Service</h1>
             <div style="background-color: {{ color }}; width: auto; height: 100px; margin: 20px;">
                 <h5 class="card-title" style="text-align: center;">{{ Status}} </h5>
             </div>
             <div class="card-body">
-              
-              <p class="card-text">{{ Response }}</p>
+                 <p class="card-text">{{ Response }}</p>
             </div>
+
+           
+
           </div>
       </div>
     
    
-<p> (c) 2021 Daniel Kasper</p>
+<p style="text-align: center; padding: 20px;">  (c) 2021 Daniel Kasper</p>
     
 </body>
 </html>
