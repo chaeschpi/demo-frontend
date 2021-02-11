@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: umbdemofrontend 
-          image: ciqkubeacr.azurecr.io/umbdemofrontend
+          image: ciqkubeacr.azurecr.io/umb/demo/rontend
           ports:
           - containerPort: 80
