@@ -12,5 +12,9 @@ spec:
         backend:
           serviceName: frontendserviceint
           servicePort: 80
+      - path: /backend
+        backend:
+          serviceName: serviceapi
+          servicePort: 80
           
        
