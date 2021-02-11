@@ -20,3 +20,6 @@ spec:
           env:
           - name: SVC
             value: "serviceapi"
+          envFrom:
+           - configMapRef:
+               name: envmapdemo
