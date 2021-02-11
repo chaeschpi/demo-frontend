@@ -12,7 +12,7 @@ variables:
 
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: 'cceac383-4c05-4146-85d9-c110c209be0a'
-  imageRepository: 'umbdemofrontend'
+  imageRepository: 'umb/demo/frontend'
   containerRegistry: 'ciqkubeacr.azurecr.io'
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
