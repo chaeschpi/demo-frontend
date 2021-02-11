@@ -17,3 +17,6 @@ spec:
           image: ciqkubeacr.azurecr.io/umb/demo/rontend
           ports:
           - containerPort: 80
+          env: 
+          -name: SVC
+           value: serviceapi
