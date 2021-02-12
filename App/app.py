@@ -8,9 +8,11 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    svc_location = os.environ.get('SVC')
-    
-    uri = "http://"+svc_location
+    if (os.environ.get('SVC')):
+        svc_location = os.environ.get('SVC')
+        uri = "http://"+svc_location
+    else:
+        uri = "http://loaclhost:500"
     try:
         response = requests.get(uri)
     except requests.RequestException as e:
@@ -28,6 +30,10 @@ def env():
      print(f"{k} : {v}")
     
     return render_template("env.html", env=os.environ)
+
+@app.route("/img")
+def ing():
+     return render_template("images.html")
 
 if __name__ == '__main__': 
     app.run(host="0.0.0.0")
